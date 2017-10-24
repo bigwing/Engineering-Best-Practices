@@ -17,9 +17,9 @@ footer[role="contentinfo"] {
 			border-top-right-radius: 100%;
 			border-top-left-radius: 100%;
 			z-index: 10; /* So that it overlays any expanded .top-nav */
-			background: #303030 url("img/10up-icon-reversed.svg") no-repeat center;
-			-webkit-background-size: 42%;
-			background-size: 42%;
+			background: #303030 url("img/BigWing_icon_RGB.svg") no-repeat center;
+			-webkit-background-size: 100%;
+			background-size: 100%;
 			@include transition(background-size, 150ms, linear);
 		}
 		@include breakpoint($breakpoint-bravo) {

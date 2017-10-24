@@ -23,17 +23,17 @@
 		border-radius: 100%;
 		z-index: 10; /* So that it overlays any expanded .top-nav */
 		@extend %hide-text;
-		background: #303030 url("img/10up-logo-full.svg") no-repeat 46% 30%;
-		-webkit-background-size: 50%;
-		background-size: 50%;
+		background: #303030 url("img/bw-icon-128.png") no-repeat 46% 30%;
+		-webkit-background-size: 60%;
+		background-size: 60%;
 		@include breakpoint($breakpoint-bravo) {
 			margin-left: -$header-logo-large / 2;
 			bottom: -$header-logo-large-protrusion;
 			height: $header-logo-large;
 			width: $header-logo-large;
-			-webkit-background-size: 45%;
-			background-size: 45%;
-			background-position: 46% 50%;
+			-webkit-background-size: 60%;
+			background-size: 60%;
+			background-position: 30% 50%;
 		}
 	}
 

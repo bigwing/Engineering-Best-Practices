@@ -1,13 +1,29 @@
-// Colors
-$party-blue: #54cdcd;
-$business-red: #b73030;
-$business-red-light: #b72f2f;
+// BigWing Colors
+$sky-blue: #65b9ff;
+$bigwing-blue: #0891f0;
+$royal-blue: #1d4f90;
+$charcoal: #363839;
+$cool-gray: #7d868c;
+$light-gray: #c3c6c8;
+$silver: #f2f1f1;
 
-$very-light-grey: #fefefe;
-$light-grey: #F9F9F9;
-$medium-grey: #eeeeee; /*used to be "light-grey" but needed a lighter grey added*/
-$dark-grey: #545353;
-$very-dark-grey: #232323;
+$orange: #ff9012;
+$yellow: #ffc700;
+$green: #72d54a;
+$teal: #63d0df;
+$purple: #9364cc;
+$red: #e84b37;
+
+// Colors
+$party-blue: $royal-blue;
+$business-red: $bigwing-blue;
+$business-red-light: $sky-blue;
+
+$very-light-grey: $silver;
+$light-grey: $light-gray;
+$medium-grey: $cool-gray; /*used to be "light-grey" but needed a lighter grey added*/
+$dark-grey: darken( $cool-gray, .10 );
+$very-dark-grey: $charcoal;
 $almost-black: #111;
 
 // Assign colors
