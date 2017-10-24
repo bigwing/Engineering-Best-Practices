@@ -8,7 +8,7 @@ author:
   email:   wordpress@bigwing.com
   github:  BigWing
   twitter: BigWingAgency
-
+timezone: America/Chicago
 markdown:      kramdown
 permalink:     pretty
 highlighter:   rouge
