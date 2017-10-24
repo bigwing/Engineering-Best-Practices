@@ -1,8 +1,8 @@
 name:          BigWing Engineering Best Practices
 title:         BigWing Engineering Best Practices
 description:   Project engineering best practices used by BigWing.
-url:           http://pages.bigwing.io/
-baseurl:       /engineering-best-practices/public
+url:           http://mestes.pages.bigwing.io/
+baseurl:       /engineering-best-practices
 author:
   name:    BigWing
   email:   wordpress@bigwing.com
