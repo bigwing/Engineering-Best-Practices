@@ -62,13 +62,13 @@ $color-accent-alternate-text: lighten($color-accent-alternate, 30%);
 $color-button: $very-dark-grey;
 $color-button-text: contrast($color-button);
 
-$color-success-light: #D6E9C6;
+$color-success-light: $green;
 $color-success-dark: darken(saturate($color-success-light, 50%), 50%);
 
-$color-warning-light: #f2efdf;
+$color-warning-light: $orange;
 $color-warning-dark: darken(saturate($color-warning-light, 50%), 50%);
 
-$color-error-light: #f2dede;
+$color-error-light: $red;
 $color-error-dark: darken(saturate($color-error-light, 50%), 50%);
 
 // font stacks
