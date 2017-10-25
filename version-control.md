@@ -3,7 +3,7 @@ page: version-control
 title: Version Control
 nav: VCS
 group: navigation
-weight: 9
+weight: 8
 layout: default
 subnav:
   - title: Structure
