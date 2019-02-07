@@ -41,11 +41,19 @@ Note, even on development projects where a child theme was customized in lieu of
 
 When a WordPress install is managed and maintained by an engineering team, and when the infrastructure supports it, plugins in a WordPress project can be easily managed using Composer. [WordPress Packagist](https://wpackagist.org/) provides a Composer repository that mirrors all public WordPress plugins and themes.
 
+<h2 id="team-collaboration" class="anchor-heading">Team Collaboration {% include Util/top %}</h2>
+
+[Slack](https://bigwing.slack.com) - Slack is our primary form of messaging and can also be used to share files up to 1GB if you are not near each other enough to use AirDrop. It is also recommended that you configure the app on your mobile device so that you can receive urgent group messages or direct communication to coordinate when not on site.
+
+[Teamwork](https://bigwing.teamwork.com) - Tasks are created and delegated via our Teamwork board. Since not everyone collaborating on a project will be a developer who can see commit history it's important to document and maintain a clear history of progress and updates here where other internal staff can review.
+
 <h2 id="version-control" class="anchor-heading">Version Control {% include Util/top %}</h2>
 
-[Git](https://git-scm.com) - At 10up we use Git for version control. We encourage people to use the command line for interacting with Git. GUIs are permitted but will not be supported internally.
+[Git](https://git-scm.com) - At BigWing we use Git for version control. We encourage people to use the command line for interacting with Git. GUIs are permitted but will not be supported internally.
 
-[SVN](https://subversion.apache.org/) - We use SVN, but only in the context of WordPress.com VIP. Again, we encourage people to use the command line as we do not support GUIs internally.
+[GitHub](https://github.com/bigwing) - Documentation and most shared code bases are stored in our GitHub repository. This is used specifically for non-sensitive and non-client work such as for components, starter themes, tools, and other utilities that may be used on projects. No client data should go into our GitHub. That's what our GitLab is for.
+
+[GitLab](https://gitlab.com/bigwing/) - GitLab is our main repo for client-specific work. This includes themes, plugins, assets, internal tools, and other things that we want separate from our GitHub repo due to confidentiality or for things not a part of our typical DevOps cycle.
 
 <h2 id="command-line" class="anchor-heading">Command Line Tools {% include Util/top %}</h2>
 
