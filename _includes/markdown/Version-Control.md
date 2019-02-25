@@ -98,11 +98,13 @@ Unlike theme development, the `master` branch represents a stable, released, ver
 
 #### Branching
 
-New features should be branched off `develop` and, once complete, merged back into `develop` using a non-fast-forward merge.
+In general, particularly for themes, content, static pages or assets, we recommend branches be named with a prefix of either `fix/<issue descriptor>` or `feature/<feature descriptor>` and branched off of `master`.
+
+Development branches when it comes to plugins should be branched off `develop`, named in a similar fashion and, once complete, merged back into `develop` using a non-fast-forward merge. This `develop` branch will work as a project go-between for `staging` (used for verification) and `master` (used for deployment).
 
 #### Deploying
 
-When `develop` is at a state where it's ready to form a new release, create a new `release/<version>` branch off of `develop`. In this branch, you'll bump version numbers, update documentation, and generally prepare your release. Once ready, merge your release branch (using a non-fast-forward merge) into `master` and tag the release:
+For plugins, when `develop` is at a state where it's ready to form a new release, create a new `release/<version>` branch off of `develop`. In this branch, you'll bump version numbers, update documentation, and generally prepare your release. Once ready, merge your release branch (using a non-fast-forward merge) into `master` and tag the release:
 
 ```sh
 git tag -a <version> -m "Tagging <version>"
@@ -114,7 +116,7 @@ Finally, merge `master` into `develop` so that `develop` includes all of the wor
 
 ##### Semantic Versioning
 
-As we assign version numbers to our software, we follow [the Semantic Versioning pattern](http://semver.org/), wherein each version follows a MAJOR.MINOR.PATCH scheme:
+For plugins, especially for ones that will be public facing on [our WordPress.org developer profile](https://profiles.wordpress.org/bigwing/), we will follow [the Semantic Versioning pattern](http://semver.org/), wherein each version follows a MAJOR.MINOR.PATCH scheme:
 
 * **MAJOR** versions are incremented when breaking changes are introduced, such as functionality being removed or otherwise major changes to the codebase.
 * **MINOR** versions are incremented when new functionality is added in a backwards-compatible manner.
@@ -123,6 +125,8 @@ As we assign version numbers to our software, we follow [the Semantic Versioning
 Imagine Jake has written a new plugin: Bigwingpalooza. He might give his first public release version **1.0.0.** After releasing the plugin, Jake decides to add some new (backwards-compatible) features, and subsequently releases version **1.1.0**. Later, Taylor finds a bug and reports it to Jake via GitHub; no functionality is added or removed, but Jake fixes the bug and releases version **1.1.1**.
 
 Down the road, Jake decides to remove some functionality or change the way some functions are used. Since this would change how others interact with his code, he would declare this new release to be version **2.0.0**, hinting to consumers that there are breaking changes in the new version of his plugin.
+
+For themes, content, assets, and other such collaboration projects for clients we do not typically version them outside of a token version number as required by WordPress for a release. This is primarily because there will be continual bug and feature development as a part of our service contracts, which would all be considered either a minor or patch change, but never major version changes. If a client requested a theme change then it would start over at 1.0 anyway considering it would be a new body of work.
 
 ##### Change Logs
 
